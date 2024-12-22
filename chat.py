@@ -5,11 +5,9 @@ from llama_index.core.memory import ChatMemoryBuffer
 from llama_index.core.storage.chat_store import SimpleChatStore
 from llama_index.core.memory import ChatMemoryBuffer
 from llama_index.core.base.llms.types import ChatMessage
+from dotenv import load_dotenv
 
-import os
-
-# Set OpenAI API Key
-os.environ['OPENAI_API_KEY'] = 'sk-your-api-key'
+load_dotenv()
 
 # Function to load and parse the document
 def load_document(file):
