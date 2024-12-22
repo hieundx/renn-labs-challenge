@@ -25,7 +25,7 @@ def build_index(documents):
 st.title("Chat with Document")
 
 # File uploader
-uploaded_files = st.file_uploader("Upload your documents", accept_multiple_files=True, type=["txt"])
+uploaded_files = st.file_uploader("Upload your documents", accept_multiple_files=True, type=["txt", "md"])
 
 if uploaded_files:
     st.write("Processing documents... This might take a few moments.")
